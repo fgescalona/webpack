@@ -10,17 +10,24 @@
     "build-css": "webpack --config ./css-style-loaders/configwebpack.js",
     "build-plugins": "webpack --config ./plugins/configwebpack.js",
     "build-dev": "webpack-dev-server --config ./webpack-dev-server/configwebpack.js",
-    "build-babel": "webpack-dev-server --config ./babel/configwebpack.js"
+    "build-babel": "webpack-dev-server --config ./babel/configwebpack.js",
+    "build-react": "webpack-dev-server --config ./react/configwebpack.js"
   },
   "keywords": [
     "webpack"
   ],
   "author": "Fides Escalona",
   "license": "MIT",
-  "dependencies": {},
+  "dependencies": {
+    "@babel/runtime": "7.9.2",
+    "react": "16.13.1",
+    "react-dom": "16.13.1"
+  },
   "devDependencies": {
     "@babel/core": "7.9.0",
+    "@babel/plugin-transform-runtime": "7.9.0",
     "@babel/preset-env": "7.9.0",
+    "@babel/preset-react": "7.9.4",
     "babel-loader": "8.1.0",
     "css-loader": "3.4.2",
     "html-webpack-plugin": "4.0.2",
